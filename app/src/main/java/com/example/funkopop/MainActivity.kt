@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity(), TextWatcher {
 
     private var funkoList = ArrayList<Funko>()
     private var funkoAdapter = FunkoAdapter(this, this.funkoList)
-    public lateinit var funkoCount: TextView
-    public lateinit var totalPrice: TextView
+    lateinit var funkoCount: TextView
+    lateinit var totalPrice: TextView
     val currencyFormat = NumberFormat.getCurrencyInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -66,13 +66,13 @@ class MainActivity : AppCompatActivity(), TextWatcher {
         this.updateTextViews()
     }
 
-    public fun showFunko(positionIndex: Int) {
+    fun showFunko(positionIndex: Int) {
         val dialog = ViewFunkoFragment()
         dialog.setFunko(this.funkoList[positionIndex])
         dialog.show(this.supportFragmentManager, "")
     }
 
-    public fun setFunko(funko: Funko) {
+    fun setFunko(funko: Funko) {
         this.funkoList.add(funko)
         this.funkoAdapter.notifyDataSetChanged()
         this.updateTextViews()
@@ -100,18 +100,6 @@ class MainActivity : AppCompatActivity(), TextWatcher {
             this.currencyFormat.format(this.getTotalPrice(filteredFunkoList)))
 
     }
-
-//    private fun whileFilteringFunkos(userInput: String) {
-//        val filteredFunkoList = ArrayList<Funko>()
-//
-//        for (funko in this.funkoList) {
-//            if (funko.name.uppercase().contains(userInput) ||
-//                funko.group.uppercase().contains(userInput)) {
-//                filteredFunkoList.add(funko)
-//            }
-//            this.funkoAdapter.filterList(filteredFunkoList)
-//        }
-//    }
 
     override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) { }
 
