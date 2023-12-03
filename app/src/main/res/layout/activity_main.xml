@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding"
+    tools:context=".MainActivity">
+
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/funko_search_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="@dimen/default_padding"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:hint="@string/search_hint_text"-->
+<!--        android:inputType="text"/>-->
+
+    <EditText
+        android:id="@+id/funko_search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/search_hint_text"
+        android:inputType="text"/>
+
+    <LinearLayout
+        android:id="@+id/info_linear_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/default_padding"
+        android:layout_marginTop="@dimen/default_padding"
+        app:layout_constraintTop_toBottomOf="@id/funko_search_edit_text">
+
+        <TextView
+            android:id="@+id/current_number_of_funko_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding"
+            android:layout_marginEnd="@dimen/default_padding"/>
+
+        <TextView
+            android:id="@+id/current_funko_total_price_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/funko_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_editor_absoluteX="@dimen/default_padding"
+        app:layout_editor_absoluteY="@dimen/default_padding"
+        app:layout_constraintTop_toBottomOf="@id/info_linear_layout"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/new_funko_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/fab_button_padding"
+        android:contentDescription="@string/fab_text"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FunkoPop</string>
+    <string name="fab_text">Додайте новий Funko</string>
+    <string name="search_hint_text">Пошук за назвою або групою</string>
+    <string name="total_funkos_text_view_text">Всього Funkos : %1$s</string>
+    <string name="total_cost_text_view_text">Загальна вартість : %1$s</string>
+
+    <string name="view_ok_button_text">В порядку</string>
+    <string name="view_selected_funko_text">Вибране Funko!</string>
+    <string name="view_name_text_view_text">Ім\'я :    %1$s</string>
+    <string name="view_group_text_view_text">Група :    %1$s</string>
+    <string name="view_number_text_view_text">Номер :    %1$d</string>
+    <string name="view_price_text_view_text">Ціна :    %1$s</string>
+    <string name="view_size_text_view_text">Розмір :    %1$d дюймів</string>
+
+    <string name="add_name_hint">Ім\'я</string>
+    <string name="add_group_hint">Група</string>
+    <string name="add_number_hint">Номер</string>
+    <string name="add_price_hint">Ціна</string>
+    <string name="add_size_hint">Розмір</string>
+    <string name="add_save_button_text">зберегти</string>
+    <string name="add_cancel_button_text">Скасувати</string>
+    <string name="add_fragment_message">Додати a Funko Pop!</string>
+    <string name="add_field_blank_toast_message">Усі поля мають бути заповнені!</string>
+    <string name="add_neg_number_toast_message">Число має бути більше нуля</string>
+    <string name="add_neg_price_toast_message">Ціна має бути більше нуля</string>
+    <string name="add_bad_size_toast_message">Розмір може бути: 1, 3, 6, 10 або 18 (дюймів)</string>
+</resources>

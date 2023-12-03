@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:padding="@dimen/default_padding"
+    tools:context=".ViewFunkoFragment">
+
+    <TextView
+        android:id="@+id/view_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_padding"
+        android:text="@string/view_name_text_view_text"/>
+
+    <TextView
+        android:id="@+id/view_group_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_padding"
+        android:text="@string/view_group_text_view_text"/>
+
+    <TextView
+        android:id="@+id/view_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_padding"
+        android:text="@string/view_number_text_view_text"/>
+
+    <TextView
+        android:id="@+id/view_price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_padding"
+        android:text="@string/view_price_text_view_text"/>
+
+    <TextView
+        android:id="@+id/view_size_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_padding"
+        android:text="@string/view_size_text_view_text"/>
+
+    <Button
+        android:id="@+id/view_ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/view_ok_button_text" />
+
+</LinearLayout>
